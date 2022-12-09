@@ -13,7 +13,7 @@ def to_upper(row: Row):
 def main() -> None:
     spark = SparkSession.builder \
         .master("local") \
-        .appName("rdd") \
+        .appName("sql") \
         .getOrCreate()
 
     folder = path.dirname(__file__)
